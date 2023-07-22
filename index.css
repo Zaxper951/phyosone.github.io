@@ -33,8 +33,13 @@ body {
     color: #6E07F3;
   }
 
+  #dark-mode{
+    border: none;
+  }
+
   #light-mode{
     display: none;
+    border: none;
   }
 
   header img{
