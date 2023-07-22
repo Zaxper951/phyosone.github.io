@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Contact Form | Phyo P. Sone's Portfolio</title>
+</head>
+<body class="form-body">
+    <nav class="submit-nav">
+        <div class="return-button">
+            <button>Return</button>
+        </div>
+    </nav>
+
+    <div class="mimoji">
+        <img src="/Users/phyosone/Documents/Codecademy/Portfolio/Resources/1.png" alt="mimoji coding on apple laptop" height="150em">
+    </div>
+
+    <form action="/Users/phyosone/Documents/Codecademy/Portfolio/contact_form.html" method="POST">
+        <h1>Thanks for deciding to reach out! How can I help you today?</h1>
+        <div class="personal-info">
+            <section class="name-section">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" required>
+            </section>
+            <section class="email-section">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required>
+            </section>
+        </div>
+        <div class="message">
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" rows="15" cols="95" required></textarea>
+        </div>
+        <div class="submission">
+            <input type="submit" value="Submit" class="submit-button">
+        </div>
+    </form>
+</body>
+</html>

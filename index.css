@@ -1,0 +1,620 @@
+body {
+    font-family: 'europa', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #141c3a;
+  }
+  
+  header nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #6E07F3;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+
+  nav .contact_button{
+    margin-left: auto;
+  }
+
+  nav button{
+    background-color: #6E07F3;
+    border-color: white;
+    border-width: 0.5em;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+  }
+
+  nav button:hover{
+    background-color: white;
+    color: #6E07F3;
+  }
+
+  header img{
+    text-align: right;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #666;
+  }
+
+  #about{
+    display: flex;
+    justify-content: center;
+  }
+
+  #about .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #about img{
+    border-radius: 50%;
+    width: 210px;
+    margin:auto;
+    height: auto;
+    display: block;
+  }
+
+  #about img:hover{
+    animation: jiggle 0.5s infinite alternate;
+  }
+
+  @keyframes jiggle{
+    from{
+      transform: rotate(-5deg);
+    }
+    to{
+      transform: rotate(5deg);
+    }
+  }
+
+  .devices_image{
+    max-width: 100%;
+    height: auto;
+  }
+
+  #intro img{
+    border-radius: 50%;
+    width: 210px;
+    margin:auto;
+    height: auto;
+    display: block;
+  }
+
+  .front-page{
+    background-image: url("/Users/phyosone/Documents/Codecademy/Portfolio/Resources/hero-devices.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 50%;
+    min-height: 400px;
+    overflow: hidden;
+}
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1, h3 ,h2{
+    color: #141c3a;
+    font-family: "europa",sans-serif;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  #about h2{
+    font-weight: 100;
+    margin-bottom: 5rem;
+  }
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    background-color: #6E07F3;
+    padding: 9rem 9.5rem;
+    line-height: 2rem;
+  }
+  
+  #intro h2{
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+  }
+
+  #intro h1{
+    color: white;
+  }
+  
+  /*.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6E07F3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 2.5rem;
+    max-width: 5rem;
+    margin-left: center;
+  }*/
+
+  /*Skill section of site */
+  #skill-container{
+    min-height: 25rem;
+  }
+
+  .skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  
+  .javascript_skill{
+    margin-top: 1.2rem;
+  }
+
+  /*@media only screen and (max-width: 730px){
+    .skills{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    background-color: #6E07F3;
+    padding: 9rem 5rem;
+    line-height: 2rem;
+  }
+}*/
+
+  /*project section of site*/
+  #projects{
+    background-color: #6E07F3;
+    padding: 9rem 9.5rem;
+  }
+
+  #projects h1{
+    color: white;
+  }
+
+  #projects h2{
+    font-weight: 200;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+  }
+
+
+  .project_container {
+    display: flex;
+    z-index: 2;
+    flex-direction: row;
+    min-height: 20rem;
+    margin:-5rem auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .project-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 2px 20px 2px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15%;
+    width: 15rem;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+
+  .project-card:hover{
+    transform: rotate(-5deg);
+    transform: rotate(5deg);
+  }
+
+
+  /*.project-card1{
+    grid-column-start: 0;
+    grid-column-end: 2;
+  }
+
+  .project-card2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }*/
+
+/*contact section of site*/
+#contact button{
+    background-color: white;
+    border-color: #6E07F3;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 1.5em 5em;
+}
+
+#contact .container{
+    text-align: center;
+    line-height: 2rem;
+}
+
+#contact{
+    margin: 10rem;
+}
+
+  #contact button:hover {
+    background-color: #6E07F3;
+    color: white;
+  }
+
+/*conclusion section of site*/
+  .conclusion{
+    background-color: #6E07F3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .conclusion h2{
+    color: white;
+    font-weight: 200;
+    padding-top: 2.5rem;
+  }
+
+  .socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2em;
+  }
+
+  .socials img{
+    margin: 5em;
+  }
+  
+  footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 730px){
+    .skills{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    background-color: #6E07F3;
+    padding: 9rem 5rem;
+    line-height: 2rem;
+  }
+
+  .front-page{
+    background-image: url("/Users/phyosone/Documents/Codecademy/Portfolio/Resources/hero-devices.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 70%;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+    .project_container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;
+    }
+  
+    .project-card {
+      margin-bottom: 1rem; /* Add some margin between project cards */
+    }
+    
+
+    #projects{
+      background-color: #6E07F3;
+      padding: 9rem 5rem;
+    }
+
+    #contact{
+      margin: 10rem 5rem;
+  }
+
+    .conclusion h2{
+      color: white;
+      font-weight: 200;
+      padding: 2.5rem 5rem;
+    }
+  }
+
+    @media only screen and (max-width: 560px){
+      nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .socials img{
+        margin: 2.5em;
+      }
+
+      #about h1{
+        font-size: 1.5em;
+      }
+
+      #about h2{
+        font-size: 1.2em;
+      }
+
+      .front-page{
+        background-image: url("/Users/phyosone/Documents/Codecademy/Portfolio/Resources/hero-devices.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 50%;
+        min-height: 250px;
+        overflow: hidden;
+    }
+
+    .front-page{
+      background-image: url("/Users/phyosone/Documents/Codecademy/Portfolio/Resources/hero-devices.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 70%;
+      min-height: 200px;
+      overflow: hidden;
+  }
+  }
+
+  @media only screen and (max-width: 450px){
+    nav ul li {
+      display: inline-block;
+      margin-right: 2px;
+      border:2px solid white;
+      border-radius: 10px;
+      padding: 4px;
+      font-size: 0.9em;
+    }
+
+    .socials img{
+      margin: 2.5em;
+    }
+
+    #about h1{
+      font-size: 1.5em;
+    }
+
+    #about h2{
+      font-size: 1.2em;
+    }
+
+    .front-page{
+      background-image: url("/Users/phyosone/Documents/Codecademy/Portfolio/Resources/hero-devices.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 70%;
+      min-height: 200px;
+      overflow: hidden;
+  }
+
+  #intro {
+    display: flex;
+    flex-direction: column;
+    background-color: #6E07F3;
+    padding: 5rem 3rem;
+    line-height: 2rem;
+  }
+
+  #intro h2{
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+    font-size: 1.2em;
+  }
+
+  #intro h1{
+    color: white;
+    font-size: 1.5em;
+  }
+
+  #projects{
+    background-color: #6E07F3;
+    padding: 5rem 3rem;
+  }
+
+  #projects h1{
+    color: white;
+    font-size: 1.5em;
+  }
+
+  #projects h2{
+    font-weight: 200;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+    font-size: 1.2em;
+  }
+
+  #contact .container{
+    text-align: center;
+    line-height: 2rem;
+}
+
+#contact{
+    margin: 10rem 2rem;
+}
+
+#contact h1{
+font-size: 1.5em;
+}
+
+#contact h2{
+  font-size: 1.2;
+}
+}
+
+/* for contact for page*/
+.form-body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+nav .return-button{
+  margin-left: auto;
+}
+
+.return-button button{
+  background-color: #6E07F3;
+  border-color: white;
+  border-width: 0.5em;
+  border-radius: 25px;
+  padding: 10px;
+  color: white;
+}
+
+.submit-nav{
+  display: flex;
+  flex-direction: row;
+  background-color: #6E07F3;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.mimoji{
+  display: flex;
+  margin-top: -5rem;
+  justify-content: center;
+}
+
+form{
+  
+  margin: 10rem auto;
+  width: 783px;
+
+}
+
+.name-section{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.email-section{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.personal-info{
+  display: flex;
+  flex-direction: row;
+  margin: 5em auto;
+  justify-content: space-between;
+}
+
+label{
+  font-family: 'europa', sans-serif;
+  font-size: 2em;
+}
+
+form textarea{
+  resize: vertical;
+}
+
+form input{
+  width: 250px;
+  height: 2.5em;
+}
+
+.submit-button{
+  background-color: white;
+  border-radius: 20px;
+  border: 5px solid #6E07F3;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+}
+
+.submit-button:hover {
+  background-color: #6E07F3;
+  color: white;
+}
+
+.submission{
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+@media only screen and (max-width: 790px){
+  .personal-info{
+    display: flex;
+    flex-direction: column;
+    margin: 5em auto;
+    justify-content: space-between;
+  }
+
+  .name-section,.email-section{
+    margin:2em;
+  }
+
+  form{
+    margin: 10rem auto;
+    width: 65%;
+  }
+
+  form textarea{
+    resize: vertical;
+    width: 100%;
+  }
+
+  .message{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*for submission page*/
+.statement{
+  display: flex;
+  margin: 10rem auto;
+  justify-content: center;
+}
+
+.thumbs-up{
+  display: flex;
+  margin-top: -5rem;
+  justify-content: center;
+}
