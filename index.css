@@ -33,6 +33,10 @@ body {
     color: #6E07F3;
   }
 
+  #light-mode{
+    display: none;
+  }
+
   header img{
     text-align: right;
   }
@@ -480,7 +484,7 @@ font-size: 1.5em;
 #contact h2{
   font-size: 1.2;
 }
-}
+  }
 
 /* for contact for page*/
 .form-body{
