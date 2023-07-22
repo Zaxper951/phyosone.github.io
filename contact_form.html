@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./index.css">
+    <script src="/Users/phyosone/Documents/Codecademy/Portfolio/script.js"></script>
     <title>Contact Form | Phyo P. Sone's Portfolio</title>
 </head>
 <body class="form-body">
@@ -17,7 +18,7 @@
         <img src="/Users/phyosone/Documents/Codecademy/Portfolio/Resources/1.png" alt="mimoji coding on apple laptop" height="150em">
     </div>
 
-    <form action="/Users/phyosone/Documents/Codecademy/Portfolio/contact_form.html" method="POST">
+    <form action="submission.html" method="POST" id="contact_form">
         <h1>Thanks for deciding to reach out! How can I help you today?</h1>
         <div class="personal-info">
             <section class="name-section">
@@ -34,7 +35,7 @@
             <textarea id="message" name="message" rows="15" cols="95" required></textarea>
         </div>
         <div class="submission">
-            <input type="submit" value="Submit" class="submit-button">
+            <a href="submission.html"><input type="submit" value="Submit" class="submit-button"></a>
         </div>
     </form>
 </body>
