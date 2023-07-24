@@ -514,6 +514,13 @@ font-size: 1.5em;
   }
 
 /* for contact for page*/
+nav .return-button{
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
 .form-body{
   margin: 0;
   padding: 0;
@@ -533,7 +540,7 @@ nav .return-button{
   color: white;
 }
 
-.submit-nav{
+#submit-nav{
   display: flex;
   flex-direction: row;
   background-color: #6E07F3;
