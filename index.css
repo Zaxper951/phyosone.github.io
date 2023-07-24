@@ -17,6 +17,7 @@ body {
 
   nav .contact_button{
     margin-left: auto;
+    display: flex;
   }
 
   nav button{
@@ -26,20 +27,27 @@ body {
     border-radius: 25px;
     padding: 10px;
     color: white;
+    cursor: pointer;
   }
 
   nav button:hover{
     background-color: white;
-    color: #6E07F3;
+    /*color: #6E07F3;*/
+    background-color: rgba(255, 255, 255, 0.665);
   }
 
   #dark-mode{
     border: none;
   }
 
+  #light-mode:hover{
+    color:#6E07F3;
+  }
+
   #light-mode{
     display: none;
     border: none;
+    background-color: #121212;
   }
 
   header img{
@@ -283,13 +291,13 @@ body {
   }
 
 /*conclusion section of site*/
-  .conclusion{
+  #conclusion{
     background-color: #6E07F3;
     display: flex;
     flex-direction: column;
   }
 
-  .conclusion h2{
+  #conclusion h2{
     color: white;
     font-weight: 200;
     padding-top: 2.5rem;
@@ -359,7 +367,7 @@ body {
       margin: 10rem 5rem;
   }
 
-    .conclusion h2{
+    #conclusion h2{
       color: white;
       font-weight: 200;
       padding: 2.5rem 5rem;
@@ -488,6 +496,20 @@ font-size: 1.5em;
 
 #contact h2{
   font-size: 1.2;
+}
+
+#contact button{
+  background-color: white;
+  border-color: #6E07F3;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 1.5em 5em;
+}
+
+.contact_button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
   }
 
