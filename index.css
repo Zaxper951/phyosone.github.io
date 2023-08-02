@@ -588,6 +588,7 @@ label{
 
 form textarea{
   resize: vertical;
+  width: 100%;
 }
 
 form input{

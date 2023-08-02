@@ -12,8 +12,6 @@ let conclusion = document.getElementById('conclusion');
 let skillHeading = document.getElementById('skillHeading');
 let contactHeading = document.getElementById('contactHeading');
 let contactHeading2 = document.getElementById('contactHeading2');
-let submitnav = document.getElementById('submit-nav');
-let label=document.querySelector('label');
 
 let enableDarkMode = function(){
     darkModeButton.style.display='none';
@@ -30,7 +28,6 @@ let enableDarkMode = function(){
     skillHeading.style.color='white';
     contactHeading.style.color='white';
     contactHeading2.style.color='white';
-    submitnav.style.backgroundColor='#121212';
 }
 
 let enableLightMode = function(){
